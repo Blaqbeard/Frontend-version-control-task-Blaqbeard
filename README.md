@@ -10,7 +10,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 
 | Task       | Description                    | Live Demo                                                 | Branch   |
 | ---------- | ------------------------------ | --------------------------------------------------------- | -------- |
-| **Task 2** | CSS Implementation             | [View Demo](https://yourusername.github.io/flexi/task-2/) | `task-2` |
+| **Task 2** | CSS Implementation             | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-2/) | `task-2` |
 | **Task 3** | CSS Pre-processors (SASS/SCSS) | Coming Soon                                               | `task-3` |
 | **Task 4** | Version Control & Git          | Coming Soon                                               | `task-4` |
 | **Task 5** | npm/yarn Package Management    | Coming Soon                                               | `task-5` |
@@ -217,8 +217,8 @@ This project is part of the FlexiSaf Internship Program. All rights reserved.
 ## 🔗 Links
 
 - **FlexiSaf Website**: [https://flexisaf.com](https://flexisaf.com)
-- **Live Portfolio**: [https://yourusername.github.io/flexi/](https://yourusername.github.io/flexi/)
-- **GitHub Repository**: [https://github.com/yourusername/flexi](https://github.com/yourusername/flexi)
+- **Live Portfolio**: [https://blaqbeard.github.io/FlexiSaf-Internship/](https://blaqbeard.github.io/FlexiSaf-Internship/)
+- **GitHub Repository**: [https://github.com/Blaqbeard/FlexiSaf-Internship](https://github.com/Blaqbeard/FlexiSaf-Internship)
 
 ---
 
