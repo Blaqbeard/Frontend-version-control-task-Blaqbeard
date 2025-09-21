@@ -10,6 +10,8 @@ The application features a responsive design, interactive shopping cart, product
 
 ## 🚀 Live Demo
 
+[View Live Site]() | [GitHub Repository](https://github.com/Blaqbeard/FlexiSaf-Tech-Store)
+
 **Local Development:** Open `index.html` in your browser or use a local server:
 
 ```bash
@@ -325,3 +327,4 @@ _Built with dedication and attention to detail for the FlexiSaf Internship Progr
 **Last Updated:** September 2025
 **Version:** 2.0.0
 **Status:** Complete ✅
+
