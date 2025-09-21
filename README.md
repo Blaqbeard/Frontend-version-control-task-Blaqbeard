@@ -1,7 +1,5 @@
 # FlexiSaf Internship Portfolio
 
-![FlexiSaf Logo](https://flexisaf.com/wp-content/uploads/2021/08/flexisaf-logo.png)
-
 ## 🎯 Overview
 
 This repository contains my complete portfolio of deliverables for the **FlexiSaf Internship Program**. Each task demonstrates progressive learning in modern web development technologies, from foundational JavaScript ES6 features to advanced React applications.
@@ -32,8 +30,6 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - Units: px vs em vs rem
   - Layout: CSS Grid and Flexbox
   - Responsive Design with media queries
-  - ES6 Features: const/let, arrow functions, template literals, destructuring, spread operator, classes
-  - Array Methods: map, filter, reduce, forEach, sort, find, splice
 
 ### 🔄 In Progress
 
@@ -130,7 +126,6 @@ A comprehensive e-commerce web application showcasing:
 - **Modern UI/UX**: Clean, professional interface with smooth animations
 - **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
 - **Interactive Features**: Shopping cart, product search, filtering, and sorting
-- **ES6 Implementation**: Extensive use of modern JavaScript features
 - **Performance**: Optimized for speed and accessibility
 - **Code Quality**: Well-documented, maintainable codebase
 
