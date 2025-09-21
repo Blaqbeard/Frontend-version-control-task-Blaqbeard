@@ -8,19 +8,20 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 
 ## 🚀 Live Demos
 
-| Task | Description | Live Demo | Branch |
-|------|-------------|----------|--------|
-| **Task 2** | CSS Implementation & ES6 Features | [View Demo](https://yourusername.github.io/flexi/task-2/) | `task-2` |
-| **Task 3** | CSS Pre-processors (SASS/SCSS) | Coming Soon | `task-3` |
-| **Task 4** | Version Control & Git | Coming Soon | `task-4` |
-| **Task 5** | npm/yarn Package Management | Coming Soon | `task-5` |
-| **Task 6** | React Fundamentals | Coming Soon | `task-6` |
+| Task       | Description                    | Live Demo                                                 | Branch   |
+| ---------- | ------------------------------ | --------------------------------------------------------- | -------- |
+| **Task 2** | CSS Implementation             | [View Demo](https://yourusername.github.io/flexi/task-2/) | `task-2` |
+| **Task 3** | CSS Pre-processors (SASS/SCSS) | Coming Soon                                               | `task-3` |
+| **Task 4** | Version Control & Git          | Coming Soon                                               | `task-4` |
+| **Task 5** | npm/yarn Package Management    | Coming Soon                                               | `task-5` |
+| **Task 6** | React Fundamentals             | Coming Soon                                               | `task-6` |
 
 ## 📚 Curriculum Progress
 
 ### ✅ Completed Tasks
 
 #### Task 2: CSS Implementation & ES6 Features
+
 - **Duration**: 1 week
 - **Focus**: Advanced CSS properties, selectors, typography, box model, layout systems, and ES6 JavaScript features
 - **Key Learning Outcomes**:
@@ -37,6 +38,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 ### 🔄 In Progress
 
 #### Task 3: CSS Pre-processors (SASS/SCSS)
+
 - **Duration**: 1 week
 - **Focus**: Understanding and implementing CSS pre-processors
 - **Learning Outcomes**:
@@ -48,6 +50,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 ### 📋 Upcoming Tasks
 
 #### Task 4: Version Control
+
 - **Duration**: 1 week
 - **Focus**: Git and GitHub mastery
 - **Learning Outcomes**:
@@ -58,6 +61,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - Upstream and downstream workflows
 
 #### Task 5: npm/yarn Package Management
+
 - **Duration**: 1 week
 - **Focus**: Node.js and package management
 - **Learning Outcomes**:
@@ -67,6 +71,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - Scripts and automation
 
 #### Task 6: React Fundamentals
+
 - **Duration**: 1 week
 - **Focus**: React.js library for frontend development
 - **Learning Outcomes**:
@@ -80,6 +85,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 ## 🛠️ Technical Stack
 
 ### Core Technologies
+
 - **HTML5**: Semantic markup and accessibility
 - **CSS3**: Advanced styling with custom properties, animations, and responsive design
 - **JavaScript ES6+**: Modern JavaScript features and array methods
@@ -87,6 +93,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 - **SASS/SCSS**: CSS pre-processing and advanced styling
 
 ### Development Tools
+
 - **Git & GitHub**: Version control and collaboration
 - **npm/yarn**: Package management and build tools
 - **GitHub Pages**: Static site hosting
@@ -117,6 +124,7 @@ flexi/
 ## 🎨 Project Highlights
 
 ### Task 2: FlexiSaf Tech Store
+
 A comprehensive e-commerce web application showcasing:
 
 - **Modern UI/UX**: Clean, professional interface with smooth animations
@@ -129,30 +137,35 @@ A comprehensive e-commerce web application showcasing:
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Modern web browser (Chrome 60+, Firefox 55+, Safari 12+, Edge 79+)
 - Git (for version control)
 - Node.js (for package management tasks)
 
 ### Installation
+
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/yourusername/flexi.git
    cd flexi
    ```
 
 2. **Navigate to specific task**:
+
    ```bash
    cd task-2  # or task-3, task-4, etc.
    ```
 
 3. **Open in browser**:
+
    ```bash
    # Using Python
    python -m http.server 8000
-   
+
    # Using Node.js
    npx serve .
-   
+
    # Using PHP
    php -S localhost:8000
    ```
@@ -160,6 +173,7 @@ A comprehensive e-commerce web application showcasing:
 ## 📊 Learning Metrics
 
 ### Code Quality Metrics
+
 - **Total Lines of Code**: 2000+ lines across all tasks
 - **JavaScript**: ES6+ features implementation
 - **CSS**: 1400+ lines of comprehensive styling
@@ -167,6 +181,7 @@ A comprehensive e-commerce web application showcasing:
 - **Documentation**: Comprehensive README files for each task
 
 ### Browser Support
+
 - **Modern Browsers**: Full feature support
 - **Legacy Browsers**: Graceful degradation
 - **Mobile Browsers**: Optimized experience
@@ -207,7 +222,7 @@ This project is part of the FlexiSaf Internship Program. All rights reserved.
 
 ---
 
-*Built with dedication and attention to detail for the FlexiSaf Internship Program*
+_Built with dedication and attention to detail for the FlexiSaf Internship Program_
 
 **Last Updated**: September 2025  
 **Version**: 1.0.0  
