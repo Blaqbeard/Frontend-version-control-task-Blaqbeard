@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports - Nigerian Business Dashboard</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__brand">
+          <i class="fas fa-chart-line"></i>
+          <h1>Business Reports</h1>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="nav__link">Dashboard</a>
+          <a href="analytics.html" class="nav__link">Analytics</a>
+          <a href="reports.html" class="nav__link active">Reports</a>
+          <a href="#" class="nav__link">Settings</a>
+        </nav>
+        <div class="header__user">
+          <div class="user__avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <span class="user__name">Adebayo Ogunlesi</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="main__container">
+        <!-- Reports Section -->
+        <section class="reports">
+          <div class="reports__header">
+            <h2>Business Intelligence Reports</h2>
+            <p class="reports__subtitle">
+              Comprehensive insights for Nigerian market growth
+            </p>
+            <div class="reports__actions">
+              <button class="btn btn--primary" id="generateReport">
+                <i class="fas fa-file-pdf"></i>
+                Generate PDF Report
+              </button>
+              <button class="btn btn--secondary" id="exportData">
+                <i class="fas fa-download"></i>
+                Export Data
+              </button>
+            </div>
+          </div>
+
+          <!-- Report Filters -->
+          <div class="filters__container">
+            <div class="filter__group">
+              <label for="dateRange">Date Range</label>
+              <select id="dateRange" class="select">
+                <option value="7days">Last 7 Days</option>
+                <option value="30days" selected>Last 30 Days</option>
+                <option value="90days">Last 90 Days</option>
+                <option value="1year">Last Year</option>
+              </select>
+            </div>
+            <div class="filter__group">
+              <label for="reportType">Report Type</label>
+              <select id="reportType" class="select">
+                <option value="financial">Financial Summary</option>
+                <option value="customer">Customer Analysis</option>
+                <option value="sales">Sales Performance</option>
+                <option value="marketing">Marketing ROI</option>
+              </select>
+            </div>
+            <div class="filter__group">
+              <label for="region">Region</label>
+              <select id="region" class="select">
+                <option value="all">All Regions</option>
+                <option value="southwest">Southwest</option>
+                <option value="southeast">Southeast</option>
+                <option value="north">North</option>
+                <option value="southsouth">South-South</option>
+              </select>
+            </div>
+            <button class="btn btn--primary" id="applyFilters">
+              <i class="fas fa-filter"></i>
+              Apply Filters
+            </button>
+          </div>
+
+          <!-- Report Content -->
+          <div class="report__content">
+            <!-- Executive Summary -->
+            <div class="report__section">
+              <h3>Executive Summary</h3>
+              <div class="summary__grid">
+                <div class="summary__card">
+                  <div class="summary__icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="summary__content">
+                    <h4>Total Revenue</h4>
+                    <div class="summary__value" data-target="2345678">₦0</div>
+                    <div class="summary__change positive">
+                      +18.5% vs last period
+                    </div>
+                  </div>
+                </div>
+                <div class="summary__card">
+                  <div class="summary__icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <div class="summary__content">
+                    <h4>New Customers</h4>
+                    <div class="summary__value" data-target="1247">0</div>
+                    <div class="summary__change positive">
+                      +12.3% vs last period
+                    </div>
+                  </div>
+                </div>
+                <div class="summary__card">
+                  <div class="summary__icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="summary__content">
+                    <h4>Orders</h4>
+                    <div class="summary__value" data-target="8934">0</div>
+                    <div class="summary__change negative">
+                      -2.1% vs last period
+                    </div>
+                  </div>
+                </div>
+                <div class="summary__card">
+                  <div class="summary__icon">
+                    <i class="fas fa-percentage"></i>
+                  </div>
+                  <div class="summary__content">
+                    <h4>Conversion Rate</h4>
+                    <div class="summary__value" data-target="3.8">0%</div>
+                    <div class="summary__change positive">
+                      +0.5% vs last period
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="report__section">
+              <h3>Performance Trends</h3>
+              <div class="charts__grid">
+                <div class="chart__container">
+                  <div class="chart__header">
+                    <h4>Revenue by Month</h4>
+                    <div class="chart__controls">
+                      <button
+                        class="btn btn--small btn--secondary"
+                        id="toggleRevenueChart"
+                      >
+                        Toggle View
+                      </button>
+                    </div>
+                  </div>
+                  <div class="chart__content">
+                    <canvas
+                      id="revenueTrendChart"
+                      width="600"
+                      height="300"
+                    ></canvas>
+                  </div>
+                </div>
+                <div class="chart__container">
+                  <div class="chart__header">
+                    <h4>Customer Acquisition</h4>
+                    <div class="chart__controls">
+                      <button
+                        class="btn btn--small btn--secondary"
+                        id="refreshCustomerChart"
+                      >
+                        Refresh
+                      </button>
+                    </div>
+                  </div>
+                  <div class="chart__content">
+                    <canvas
+                      id="customerChart"
+                      width="400"
+                      height="300"
+                    ></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Tables -->
+            <div class="report__section">
+              <h3>Detailed Analysis</h3>
+              <div class="tables__container">
+                <div class="table__wrapper">
+                  <div class="table__header">
+                    <h4>Top Performing Products</h4>
+                    <button
+                      class="btn btn--small btn--secondary"
+                      id="exportProducts"
+                    >
+                      Export
+                    </button>
+                  </div>
+                  <div class="table__content">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Product</th>
+                          <th>Revenue</th>
+                          <th>Units Sold</th>
+                          <th>Growth</th>
+                        </tr>
+                      </thead>
+                      <tbody id="productsTable">
+                        <!-- Data populated by JavaScript -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="table__wrapper">
+                  <div class="table__header">
+                    <h4>Regional Performance</h4>
+                    <button
+                      class="btn btn--small btn--secondary"
+                      id="exportRegions"
+                    >
+                      Export
+                    </button>
+                  </div>
+                  <div class="table__content">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Region</th>
+                          <th>Revenue</th>
+                          <th>Customers</th>
+                          <th>Market Share</th>
+                        </tr>
+                      </thead>
+                      <tbody id="regionsTable">
+                        <!-- Data populated by JavaScript -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Insights and Recommendations -->
+            <div class="report__section">
+              <h3>Key Insights & Recommendations</h3>
+              <div class="insights__container">
+                <div class="insight__card positive">
+                  <div class="insight__icon">
+                    <i class="fas fa-arrow-up"></i>
+                  </div>
+                  <div class="insight__content">
+                    <h4>Strong Growth in Lagos</h4>
+                    <p>
+                      Lagos region shows 25% revenue growth. Consider expanding
+                      marketing efforts in this region.
+                    </p>
+                  </div>
+                </div>
+                <div class="insight__card warning">
+                  <div class="insight__icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </div>
+                  <div class="insight__content">
+                    <h4>Conversion Rate Decline</h4>
+                    <p>
+                      Overall conversion rate decreased by 2.1%. Review checkout
+                      process and user experience.
+                    </p>
+                  </div>
+                </div>
+                <div class="insight__card info">
+                  <div class="insight__icon">
+                    <i class="fas fa-lightbulb"></i>
+                  </div>
+                  <div class="insight__content">
+                    <h4>Mobile Opportunity</h4>
+                    <p>
+                      65% of traffic is mobile. Optimize mobile experience to
+                      increase conversions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading" id="loading">
+      <div class="loading__spinner"></div>
+      <p>Generating reports...</p>
+    </div>
+
+    <script src="src/reports.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics Dashboard - Task 3</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__brand">
+          <i class="fas fa-chart-line"></i>
+          <h1>Analytics Dashboard</h1>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="nav__link active">Dashboard</a>
+          <a href="analytics.html" class="nav__link">Analytics</a>
+          <a href="reports.html" class="nav__link">Reports</a>
+          <a href="#" class="nav__link">Settings</a>
+        </nav>
+        <div class="header__user">
+          <div class="user__avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <span class="user__name">Adebayo Ogunlesi</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="main__container">
+        <!-- Stats Overview -->
+        <section class="stats">
+          <div class="stats__card">
+            <div class="card__icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Total Users</h3>
+              <p class="card__value" data-target="12543">0</p>
+              <span class="card__change positive">+12.5%</span>
+            </div>
+          </div>
+
+          <div class="stats__card">
+            <div class="card__icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Revenue</h3>
+              <p class="card__value" data-target="89432">₦0</p>
+              <span class="card__change positive">+8.2%</span>
+            </div>
+          </div>
+
+          <div class="stats__card">
+            <div class="card__icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Orders</h3>
+              <p class="card__value" data-target="3421">0</p>
+              <span class="card__change negative">-2.1%</span>
+            </div>
+          </div>
+
+          <div class="stats__card">
+            <div class="card__icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Growth</h3>
+              <p class="card__value" data-target="23.7">0%</p>
+              <span class="card__change positive">+5.3%</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts">
+          <div class="chart__container">
+            <div class="chart__header">
+              <h2>Revenue Analytics</h2>
+              <div class="chart__controls">
+                <button class="btn btn--primary">Export</button>
+                <select class="select">
+                  <option>Last 7 days</option>
+                  <option>Last 30 days</option>
+                  <option>Last 3 months</option>
+                </select>
+              </div>
+            </div>
+            <div class="chart__content">
+              <canvas id="revenueChart" width="800" height="400"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Data Tables -->
+        <section class="tables">
+          <div class="table__container">
+            <div class="table__header">
+              <h2>Recent Activity</h2>
+              <button class="btn btn--secondary">View All</button>
+            </div>
+            <div class="table__content">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Action</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="user__info">
+                        <div class="user__avatar--small">
+                          <i class="fas fa-user"></i>
+                        </div>
+                        <span>Fatima Ibrahim</span>
+                      </div>
+                    </td>
+                    <td>Made a purchase</td>
+                    <td>2 minutes ago</td>
+                    <td>
+                      <span class="status status--success">Completed</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user__info">
+                        <div class="user__avatar--small">
+                          <i class="fas fa-user"></i>
+                        </div>
+                        <span>Chinedu Okonkwo</span>
+                      </div>
+                    </td>
+                    <td>Updated profile</td>
+                    <td>15 minutes ago</td>
+                    <td><span class="status status--info">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user__info">
+                        <div class="user__avatar--small">
+                          <i class="fas fa-user"></i>
+                        </div>
+                        <span>Kemi Adebayo</span>
+                      </div>
+                    </td>
+                    <td>Logged in</td>
+                    <td>1 hour ago</td>
+                    <td><span class="status status--success">Active</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading" id="loading">
+      <div class="loading__spinner"></div>
+      <p>Loading dashboard...</p>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
