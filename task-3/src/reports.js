@@ -13,7 +13,7 @@ class BusinessReports {
     this.init();
   }
 
-  // initialization method 
+  // initialization method
   init() {
     this.setupEventListeners();
     this.loadReportData();
@@ -76,9 +76,9 @@ class BusinessReports {
     });
   }
 
-  // Load report data 
+  // Load report data
   loadReportData() {
-    // Nigerian business data 
+    // Nigerian business data
     this.reportData = {
       financial: {
         revenue: 2345678,
@@ -175,7 +175,7 @@ class BusinessReports {
     }
   }
 
-  // Revenue trend chart 
+  // Revenue trend chart
   createRevenueTrendChart() {
     const canvas = document.getElementById("revenueTrendChart");
     if (!canvas) return;
@@ -284,7 +284,7 @@ class BusinessReports {
     }
   }
 
-  // Customer acquisition chart 
+  // Customer acquisition chart
   createCustomerChart() {
     const canvas = document.getElementById("customerChart");
     if (!canvas) return;

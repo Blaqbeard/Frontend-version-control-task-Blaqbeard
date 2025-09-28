@@ -7,7 +7,7 @@ class AnalyticsDashboard {
     this.init();
   }
 
-  //  initialization method - 
+  //  initialization method -
   init() {
     this.setupEventListeners();
     this.animateCounters();
