@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics - Nigerian Business Dashboard</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__brand">
+          <i class="fas fa-chart-line"></i>
+          <h1>Nigerian Business Analytics</h1>
+        </div>
+        <nav class="header__nav">
+          <a href="index.html" class="nav__link">Dashboard</a>
+          <a href="analytics.html" class="nav__link active">Analytics</a>
+          <a href="reports.html" class="nav__link">Reports</a>
+          <a href="#" class="nav__link">Settings</a>
+        </nav>
+        <div class="header__user">
+          <div class="user__avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <span class="user__name">Adebayo Ogunlesi</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="main__container">
+        <!-- Advanced Analytics Section -->
+        <section class="analytics">
+          <div class="analytics__header">
+            <h2>Advanced Analytics</h2>
+            <p class="analytics__subtitle">
+              Deep insights into your Nigerian business performance
+            </p>
+          </div>
+
+          <!-- Key Performance Indicators -->
+          <div class="kpi__grid">
+            <div class="kpi__card">
+              <div class="kpi__icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="kpi__content">
+                <h3>Customer Acquisition</h3>
+                <div class="kpi__value" data-target="15420">0</div>
+                <div class="kpi__trend positive">
+                  <i class="fas fa-arrow-up"></i>
+                  <span>+15.3%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="kpi__card">
+              <div class="kpi__icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="kpi__content">
+                <h3>Revenue Growth</h3>
+                <div class="kpi__value" data-target="234567">₦0</div>
+                <div class="kpi__trend positive">
+                  <i class="fas fa-arrow-up"></i>
+                  <span>+22.7%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="kpi__card">
+              <div class="kpi__icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="kpi__content">
+                <h3>Conversion Rate</h3>
+                <div class="kpi__value" data-target="3.8">0%</div>
+                <div class="kpi__trend negative">
+                  <i class="fas fa-arrow-down"></i>
+                  <span>-2.1%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="kpi__card">
+              <div class="kpi__icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="kpi__content">
+                <h3>Avg. Session</h3>
+                <div class="kpi__value" data-target="4.2">0m</div>
+                <div class="kpi__trend positive">
+                  <i class="fas fa-arrow-up"></i>
+                  <span>+8.5%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charts Section -->
+          <div class="charts__container">
+            <div class="chart__wrapper">
+              <div class="chart__header">
+                <h3>Revenue Trends by State</h3>
+                <div class="chart__controls">
+                  <select class="select" id="stateFilter">
+                    <option value="all">All States</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="abuja">Abuja</option>
+                    <option value="kano">Kano</option>
+                    <option value="rivers">Rivers</option>
+                  </select>
+                </div>
+              </div>
+              <div class="chart__content">
+                <canvas id="revenueChart" width="800" height="400"></canvas>
+              </div>
+            </div>
+
+            <div class="chart__wrapper">
+              <div class="chart__header">
+                <h3>Customer Demographics</h3>
+                <div class="chart__controls">
+                  <button class="btn btn--secondary" id="refreshDemographics">
+                    Refresh
+                  </button>
+                </div>
+              </div>
+              <div class="chart__content">
+                <canvas
+                  id="demographicsChart"
+                  width="400"
+                  height="400"
+                ></canvas>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real-time Activity -->
+          <div class="activity__container">
+            <div class="activity__header">
+              <h3>Real-time Activity</h3>
+              <div class="activity__status">
+                <span class="status__indicator"></span>
+                <span>Live</span>
+              </div>
+            </div>
+            <div class="activity__feed" id="activityFeed">
+              <!-- Activities will be populated by JavaScript -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading" id="loading">
+      <div class="loading__spinner"></div>
+      <p>Loading analytics...</p>
+    </div>
+
+    <script src="src/analytics.js"></script>
+  </body>
+</html>

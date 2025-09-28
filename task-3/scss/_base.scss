@@ -1,0 +1,159 @@
+// Reset and Base Styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-normal;
+  color: $gray-900;
+  background-color: $gray-50;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-tight;
+  color: $gray-900;
+}
+
+h1 {
+  @include heading-1;
+}
+
+h2 {
+  @include heading-2;
+}
+
+h3 {
+  @include heading-3;
+}
+
+p {
+  margin: 0;
+  @include body-base;
+}
+
+// Links
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color $duration-200 $ease-in-out;
+
+  &:hover {
+    color: $primary-dark;
+  }
+
+  &:focus {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+    border-radius: $border-radius-sm;
+  }
+}
+
+// Lists
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Form Elements
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+// Focus Styles
+:focus-visible {
+  outline: 2px solid $primary-color;
+  outline-offset: 2px;
+  border-radius: $border-radius-sm;
+}
+
+// Selection
+::selection {
+  background-color: $primary-color;
+  color: $white;
+}
+
+// Scrollbar Styling
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $gray-100;
+  border-radius: $border-radius-full;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $gray-300;
+  border-radius: $border-radius-full;
+
+  &:hover {
+    background: $gray-400;
+  }
+}
+
+// Accessibility
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+// High Contrast Mode
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #0000ff;
+    --text-color: #000000;
+    --background-color: #ffffff;
+  }
+}
+

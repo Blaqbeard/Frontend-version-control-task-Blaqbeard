@@ -8,13 +8,13 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 
 ## 🚀 Live Demos
 
-| Task       | Description                    | Live Demo                                                 | Branch   |
-| ---------- | ------------------------------ | --------------------------------------------------------- | -------- |
+| Task       | Description                    | Live Demo                                                            | Branch   |
+| ---------- | ------------------------------ | -------------------------------------------------------------------- | -------- |
 | **Task 2** | CSS Implementation             | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-2/) | `task-2` |
-| **Task 3** | CSS Pre-processors (SASS/SCSS) | Coming Soon                                               | `task-3` |
-| **Task 4** | Version Control & Git          | Coming Soon                                               | `task-4` |
-| **Task 5** | npm/yarn Package Management    | Coming Soon                                               | `task-5` |
-| **Task 6** | React Fundamentals             | Coming Soon                                               | `task-6` |
+| **Task 3** | CSS Pre-processors (SASS/SCSS) | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-3/) | `task-3` |
+| **Task 4** | Version Control & Git          | Coming Soon                                                          | `task-4` |
+| **Task 5** | npm/yarn Package Management    | Coming Soon                                                          | `task-5` |
+| **Task 6** | React Fundamentals             | Coming Soon                                                          | `task-6` |
 
 ## 📚 Curriculum Progress
 
@@ -35,17 +35,17 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - ES6 Features: const/let, arrow functions, template literals, destructuring, spread operator, classes
   - Array Methods: map, filter, reduce, forEach, sort, find, splice
 
-### 🔄 In Progress
-
 #### Task 3: CSS Pre-processors (SASS/SCSS)
 
 - **Duration**: 1 week
-- **Focus**: Understanding and implementing CSS pre-processors
-- **Learning Outcomes**:
-  - SASS/SCSS syntax and features
-  - Variables, mixins, and functions
-  - Nesting and inheritance
-  - Compilation and build processes
+- **Focus**: Understanding and implementing SCSS in a real project
+- **Deliverable**: Nigerian Business Analytics Dashboard (multi-page)
+- **What I Implemented**:
+  - Modular SCSS architecture with `variables`, `mixins`, `base`, `components`, `utilities`
+  - Responsive mixins and design tokens (colors, spacing, typography)
+  - BEM methodology and componentized styling
+  - Single compiled stylesheet: `task-3/dist/style.css`
+  - Real-time dashboard with Analytics and Reports pages
 
 ### 📋 Upcoming Tasks
 
@@ -112,7 +112,22 @@ flexi/
 │   ├── images/
 │   └── README.md
 ├── task-3/                  # CSS Pre-processors (SASS/SCSS)
-│   └── (coming soon)
+│   ├── index.html           # Dashboard
+│   ├── analytics.html       # Advanced analytics
+│   ├── reports.html         # BI reports
+│   ├── src/
+│   │   ├── script.js        # Dashboard logic
+│   │   ├── analytics.js     # Analytics logic
+│   │   └── reports.js       # Reports logic
+│   ├── scss/
+│   │   ├── _variables.scss  # Design tokens
+│   │   ├── _mixins.scss     # Reusable mixins
+│   │   ├── _base.scss       # Reset/base
+│   │   ├── _components.scss # Components
+│   │   ├── _utilities.scss  # Utilities
+│   │   └── main.scss        # Entry (imports all)
+│   └── dist/
+│       └── style.css        # Compiled single CSS
 ├── task-4/                  # Version Control & Git
 │   └── (coming soon)
 ├── task-5/                  # npm/yarn Package Management

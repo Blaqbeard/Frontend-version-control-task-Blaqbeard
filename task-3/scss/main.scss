@@ -1,0 +1,155 @@
+// Main SCSS File - Analytics Dashboard
+// This file imports all SCSS modules and compiles them into a single CSS file
+
+// Import Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+// Import all SCSS modules
+@import "variables";
+@import "mixins";
+@import "base";
+@import "components";
+@import "utilities";
+
+// Custom animations and effects
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+// Loading skeleton animation
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    $gray-200 25%,
+    $gray-100 50%,
+    $gray-200 75%
+  );
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+// Custom scrollbar for webkit browsers
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: $gray-100;
+  border-radius: $border-radius-full;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $gray-300;
+  border-radius: $border-radius-full;
+  transition: background-color $duration-200 $ease-in-out;
+
+  &:hover {
+    background: $gray-400;
+  }
+}
+
+// Print styles
+@media print {
+  .header,
+  .loading,
+  .btn,
+  .chart__controls {
+    display: none !important;
+  }
+
+  .main {
+    padding: 0 !important;
+  }
+
+  .stats__card,
+  .chart__container,
+  .table__container {
+    box-shadow: none !important;
+    border: 1px solid $gray-300 !important;
+    break-inside: avoid;
+  }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #0000ff;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --border-color: #000000;
+  }
+
+  .card__icon {
+    background: #0000ff !important;
+  }
+
+  .btn--primary {
+    background: #0000ff !important;
+    border: 2px solid #000000 !important;
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .loading__spinner {
+    animation: none !important;
+  }
+}
+
+// Dark mode support (for future implementation)
+@media (prefers-color-scheme: dark) {
+  // Dark mode styles would go here
+  // Currently not implemented as per requirements
+}
+
+// Focus management for accessibility
+.focus-trap {
+  &:focus {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+}
+
+// Skip link for screen readers
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: $primary-color;
+  color: $white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: $border-radius-md;
+  z-index: $z-tooltip;
+
+  &:focus {
+    top: 6px;
+  }
+}
+
