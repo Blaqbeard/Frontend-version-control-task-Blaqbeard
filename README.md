@@ -53,3 +53,5 @@ Header: add project clear tagline.
 Header: add project clear tagline.
 
 Note: header verified locally.
+
+Footer: copyright © 2025 line.
