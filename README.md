@@ -50,13 +50,10 @@ cd story-print
 
 Header: add project clear tagline.
 
-Header: add project clear tagline.
-
 Note: header verified locally.
 
-Footer: copyright © 2025 line.
+Footer: copyright ï¿½ 2025 line.
 
-<<<<<<< HEAD
 Docs: add resource links
 
 Docs: add license notice
@@ -70,20 +67,20 @@ Chore: add version note
 Chore: add summary footer
 
 ### Pull Requests
+
 - https://github.com/Blaqbeard/Frontend-version-control-task-Blaqbeard/pull/8
 - https://github.com/Blaqbeard/Frontend-version-control-task-Blaqbeard/pull/7
 - https://github.com/Blaqbeard/Frontend-version-control-task-Blaqbeard/pull/6
 
 ### Commands I used most
+
 - git branch / checkout / switch
 - git add / commit / push / pull --rebase / fetch --all --prune
 - git merge / rebase -i / cherry-pick / revert
 - gh pr create / comment / merge
 
 ### Lessons learned
+
 - Clear commit messages and small PRs simplify reviews.
 - Squash keeps history clean; rebase integrates linear history.
 - Revert is safer than reset on shared branches.
-=======
-Chore: minor visual tweak
->>>>>>> f29d531 (chore(readme): minor visual tweak)
