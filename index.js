@@ -5,6 +5,7 @@ const chapter = process.env.CHAPTER || "0";
 function printChapter(selectedChapter) {
   const chapters = {
     "0": "Chapter 0: The story begins with a single commit.",
+    "1": "Chapter 1: A new branch sprouts from main, simple and clean.",
   };
 
   const text = chapters[selectedChapter] || `Chapter ${selectedChapter}: (not written yet)`;
