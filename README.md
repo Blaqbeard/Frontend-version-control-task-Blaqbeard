@@ -13,6 +13,12 @@ This task demonstrates practical Git/GitHub workflows using the minimal CLI app 
 - Squash workflow via interactive rebase before merge
 - Tagging releases and generating activity logs
 
+## Image Reference
+
+![Repo overview](/images/repo-overview.png)
+![Git history](/images/git-history.png)
+[![Merged PR](/images/merged-pr.png)](https://github.com/Blaqbeard/story-print/pull/2)
+
 ## Evidence
 
 - Log: `story-print/TASK4_LOG.txt`
