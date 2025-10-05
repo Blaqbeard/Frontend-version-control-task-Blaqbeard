@@ -11,6 +11,7 @@ function printChapter(selectedChapter) {
     "4": "Chapter 4: A merge conflict appears; calm heads prevail.",
     "5": "Chapter 5: A mistake is made, then reverted with grace.",
     "6": "Chapter 6: A single brilliant line is cherry-picked across branches.",
+    "7": "Chapter 7: We squash tiny commits into one clean story.",
   };
 
   const text = chapters[selectedChapter] || `Chapter ${selectedChapter}: (not written yet)`;
