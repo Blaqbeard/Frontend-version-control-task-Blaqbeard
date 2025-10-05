@@ -63,3 +63,5 @@ Docs: add license notice
 Docs: fix small typo
 
 Chore: minor visual tweak
+
+Chore: add version note
