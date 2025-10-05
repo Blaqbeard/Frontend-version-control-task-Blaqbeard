@@ -65,3 +65,5 @@ Docs: fix small typo
 Chore: minor visual tweak
 
 Chore: add version note
+
+Chore: add summary footer
