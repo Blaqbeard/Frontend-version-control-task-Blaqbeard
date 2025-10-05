@@ -33,7 +33,9 @@ $env:CHAPTER=6; node index.js   # PowerShell example
 
 ### Pull Requests
 
-- (to be filled with URLs)
+- https://github.com/Blaqbeard/story-print/pull/2
+- https://github.com/Blaqbeard/story-print/pull/3
+- https://github.com/Blaqbeard/story-print/pull/4
 
 ### Clone I used
 
