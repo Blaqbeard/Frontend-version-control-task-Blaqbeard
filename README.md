@@ -16,3 +16,28 @@ CHAPTER=3 node index.js      # prints Chapter 3 (if exists)
 
 
 Proof: Updated wording.
+
+
+## 🤝 Contributing
+
+This is an internship deliverable project. For suggestions or improvements, please reach out through the appropriate channels.
+
+## 📄 License
+
+This project is part of the FlexiSaf Internship Program. All rights reserved.
+
+## 👨‍💻 Author
+
+**Blaqbeard** - FlexiSaf Intern
+
+- **Project:** Task 4 Intermediate Deliverable
+- **Focus:** Git and Verson control Implementation
+- **Duration:** 1 week development cycle
+
+---
+
+_Built with dedication and attention to detail for the FlexiSaf Internship Program_
+
+**Last Updated:** October 2025
+**Version:** 2.2.0
+**Status:** Complete ✅
