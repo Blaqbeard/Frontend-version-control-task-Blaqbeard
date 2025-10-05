@@ -30,3 +30,5 @@ $env:CHAPTER=6; node index.js   # PowerShell example
 ## Notes
 
 - Each chapter corresponds to a branch-based exercise as described in the root README.
+
+### Pull Requests
