@@ -48,6 +48,6 @@ cd story-print
 
 - Ran on master: `git fetch --all --prune` and `git pull --rebase` (captured in `TASK4_LOG.txt`).
 
-Header: add project tagline.
+Header: add project clear tagline.
 
-Header: add project tagline.
+Header: add project clear tagline.
