@@ -16,12 +16,7 @@ CHAPTER=3 node index.js      # prints Chapter 3 (if exists)
 
 Proof: Updated wording.
 
-<<<<<<< HEAD
-
 ## 🤝 Contributing
-=======
-# 🤝 Contributing
->>>>>>> 3fe2d21 (docs: tighten wording in README)
 
 This is an internship deliverable project. For suggestions or improvements, please reach out through the appropriate channels.
 
