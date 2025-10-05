@@ -37,6 +37,17 @@ $env:CHAPTER=6; node index.js   # PowerShell example
 
 - Each chapter corresponds to a branch-based exercise as described in the root README.
 
+ | Branch                 | Purpose                                                                     |
+| ---------------------- | --------------------------------------------------------------------------- |
+| `feat/chapter-1-tweak` | Refine Chapter 1 phrasing and improve readability                           |
+| `chore/log-note`       | Add note tags in README for better documentation                            |
+| `docs/typo-readme`     | Fix minor typos and tighten wording in README                               |
+| `chapter-6-source`     | Add Chapter 6 text (feature implementation)                                 |
+| `chapter-7`            | Add and refine Chapter 7 text                                               |
+| `chore/final-touch`    | Apply final polish and squash commits before merge                          |
+| `master`               | Maintains the clean, stable version after merges and tags (`v0.1` → `v0.7`) |
+
+
 ### Pull Requests
 
 - https://github.com/Blaqbeard/story-print/pull/2
