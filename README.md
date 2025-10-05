@@ -6,13 +6,13 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 
 ## 🚀 Live Demos
 
-| Task       | Description                    | Live Demo                                                            | Branch   |
-| ---------- | ------------------------------ | -------------------------------------------------------------------- | -------- |
-| **Task 2** | CSS Implementation             | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-2/) | `task-2` |
-| **Task 3** | CSS Pre-processors (SASS/SCSS) | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-3/) | `task-3` |
-| **Task 4** | Version Control & Git          | Coming Soon                                                          | `task-4` |
-| **Task 5** | npm/yarn Package Management    | Coming Soon                                                          | `task-5` |
-| **Task 6** | React Fundamentals             | Coming Soon                                                          | `task-6` |
+| Task       | Description                    | Live Demo                                                             | Branch   |
+| ---------- | ------------------------------ | --------------------------------------------------------------------- | -------- |
+| **Task 2** | CSS Implementation             | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-2/)  | `task-2` |
+| **Task 3** | CSS Pre-processors (SASS/SCSS) | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-3/)  | `task-3` |
+| **Task 4** | Version Control & Git          | [Log & Docs](https://blaqbeard.github.io/FlexiSaf-Internship/task-4/) | `task-4` |
+| **Task 5** | npm/yarn Package Management    | Coming Soon                                                           | `task-5` |
+| **Task 6** | React Fundamentals             | Coming Soon                                                           | `task-6` |
 
 ## 📚 Curriculum Progress
 

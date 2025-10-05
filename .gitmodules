@@ -1,0 +1,3 @@
+[submodule "task-4/story-print"]
+	path = task-4/story-print
+	url = https://github.com/Blaqbeard/story-print.git
