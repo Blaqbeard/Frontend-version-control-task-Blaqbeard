@@ -32,3 +32,16 @@ $env:CHAPTER=6; node index.js   # PowerShell example
 - Each chapter corresponds to a branch-based exercise as described in the root README.
 
 ### Pull Requests
+
+- (to be filled with URLs)
+
+### Clone I used
+
+```bash
+git clone https://github.com/Blaqbeard/story-print.git
+cd story-print
+```
+
+### Fetch/Pull Evidence
+
+- Ran on master: `git fetch --all --prune` and `git pull --rebase` (captured in `TASK4_LOG.txt`).
