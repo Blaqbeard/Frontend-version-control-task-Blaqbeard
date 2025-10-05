@@ -55,3 +55,5 @@ Header: add project clear tagline.
 Note: header verified locally.
 
 Footer: copyright © 2025 line.
+
+Docs: add resource links
