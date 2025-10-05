@@ -47,3 +47,19 @@ cd story-print
 ### Fetch/Pull Evidence
 
 - Ran on master: `git fetch --all --prune` and `git pull --rebase` (captured in `TASK4_LOG.txt`).
+
+### Pull Requests
+- https://github.com/Blaqbeard/Frontend-version-control-task-Blaqbeard/pull/7
+- https://github.com/Blaqbeard/Frontend-version-control-task-Blaqbeard/pull/6
+- https://github.com/Blaqbeard/Frontend-version-control-task-Blaqbeard/pull/5
+
+### Commands I used most
+- git branch / checkout / switch
+- git add / commit / push / pull --rebase / fetch --all --prune
+- git merge / rebase -i / cherry-pick / revert
+- gh pr create / comment / merge
+
+### Lessons learned
+- Clear commit messages and small PRs simplify reviews.
+- Squash keeps history clean; rebase integrates linear history.
+- Revert is safer than reset on shared branches.
