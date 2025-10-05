@@ -56,6 +56,7 @@ Note: header verified locally.
 
 Footer: copyright © 2025 line.
 
+<<<<<<< HEAD
 Docs: add resource links
 
 Docs: add license notice
@@ -83,3 +84,6 @@ Chore: add summary footer
 - Clear commit messages and small PRs simplify reviews.
 - Squash keeps history clean; rebase integrates linear history.
 - Revert is safer than reset on shared branches.
+=======
+Chore: minor visual tweak
+>>>>>>> f29d531 (chore(readme): minor visual tweak)
