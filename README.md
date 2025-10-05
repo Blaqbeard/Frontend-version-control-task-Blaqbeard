@@ -57,3 +57,5 @@ Note: header verified locally.
 Footer: copyright © 2025 line.
 
 Docs: add resource links
+
+Docs: add license notice
