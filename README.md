@@ -59,3 +59,5 @@ Footer: copyright © 2025 line.
 Docs: add resource links
 
 Docs: add license notice
+
+Docs: fix small typo
