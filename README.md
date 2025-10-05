@@ -47,3 +47,9 @@ cd story-print
 ### Fetch/Pull Evidence
 
 - Ran on master: `git fetch --all --prune` and `git pull --rebase` (captured in `TASK4_LOG.txt`).
+
+Header: add project clear tagline.
+
+Header: add project clear tagline.
+
+Note: header verified locally.
