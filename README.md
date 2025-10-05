@@ -61,3 +61,5 @@ Docs: add resource links
 Docs: add license notice
 
 Docs: fix small typo
+
+Chore: minor visual tweak
