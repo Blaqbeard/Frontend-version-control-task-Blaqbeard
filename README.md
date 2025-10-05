@@ -13,3 +13,6 @@ CHAPTER=3 node index.js      # prints Chapter 3 (if exists)
 
 - Provides a safe, text-only codebase to practice Git branching, rebasing, merging, reverting, and cherry-picking.
 - Each chapter will be added on its own branch and merged via pull requests.
+
+
+Proof: Updated wording.
