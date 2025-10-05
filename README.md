@@ -39,3 +39,5 @@ _Built with dedication and attention to detail for the FlexiSaf Internship Progr
 **Last Updated:** October 2025
 **Version:** 2.2.0
 **Status:** Complete ✅
+
+Note: tags v0.1–v0.7 created.
