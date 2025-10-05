@@ -51,3 +51,5 @@ cd story-print
 Header: add project clear tagline.
 
 Header: add project clear tagline.
+
+Note: header verified locally.
