@@ -9,6 +9,8 @@ function printChapter(selectedChapter) {
     "2": "Chapter 2: The branch is renamed to tell a clearer tale.",
     "3": "Chapter 3: We rebase to tidy the timeline and keep it linear (vB).",
     "4": "Chapter 4: A merge conflict appears; calm heads prevail.",
+    "5": "Chapter 5: A mistake is made, then reverted with grace.",
+    "6": "Chapter 6: A single brilliant line is cherry-picked across branches.",
   };
 
   const text = chapters[selectedChapter] || `Chapter ${selectedChapter}: (not written yet)`;
