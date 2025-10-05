@@ -1,43 +1,49 @@
-# story-print
+# Task 4 – Version Control & Git
 
-A tiny Node.js CLI that prints a short story chapter. This repo is used to demonstrate Git workflows for Task 4.
+This task demonstrates practical Git/GitHub workflows using the minimal CLI app in `story-print/`.
 
-## Usage
+## What I practiced
+
+- Creating repo and first commit
+- Branching, renaming branches, and merging with `--no-ff`
+- Rebasing a feature branch
+- Creating and resolving an intentional merge conflict
+- Reverting a merge (`git revert -m 1`)
+- Cherry-picking a commit from another branch
+- Squash workflow via interactive rebase before merge
+- Tagging releases and generating activity logs
+
+## Evidence
+
+- Log: `story-print/TASK4_LOG.txt`
+- App entry: `story-print/index.js`
+- Tags: `v0.1` … `v0.7`
+
+## How to run
 
 ```bash
-node index.js                # prints Chapter 0
-CHAPTER=3 node index.js      # prints Chapter 3 (if exists)
+cd story-print
+node index.js           # Chapter 0
+$env:CHAPTER=6; node index.js   # PowerShell example
 ```
 
-## Purpose
+## Notes
 
-- Provides a safe, text-only codebase to practice Git branching, rebasing, merging, reverting, and cherry-picking.
-- Each chapter will be added on its own branch and merged via pull requests.
+- Each chapter corresponds to a branch-based exercise as described in the root README.
 
-Proof: Updated wording.
+### Pull Requests
 
-## 🤝 Contributing
+- https://github.com/Blaqbeard/story-print/pull/2
+- https://github.com/Blaqbeard/story-print/pull/3
+- https://github.com/Blaqbeard/story-print/pull/4
 
-This is an internship deliverable project. For suggestions or improvements, please reach out through the appropriate channels.
+### Clone I used
 
-## 📄 License
+```bash
+git clone https://github.com/Blaqbeard/story-print.git
+cd story-print
+```
 
-This project is part of the FlexiSaf Internship Program. All rights reserved.
+### Fetch/Pull Evidence
 
-## 👨‍💻 Author
-
-**Blaqbeard** - FlexiSaf Intern
-
-- **Project:** Task 4 Intermediate Deliverable
-- **Focus:** Git and Verson control Implementation
-- **Duration:** 1 week development cycle
-
----
-
-_Built with dedication and attention to detail for the FlexiSaf Internship Program_
-
-**Last Updated:** October 2025
-**Version:** 2.2.0
-**Status:** Complete ✅
-
-Note: tags v0.1–v0.7 created.
+- Ran on master: `git fetch --all --prune` and `git pull --rebase` (captured in `TASK4_LOG.txt`).
