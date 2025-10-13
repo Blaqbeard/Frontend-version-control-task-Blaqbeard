@@ -11,14 +11,14 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 | **Task 2** | CSS Implementation             | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-2/)  | `task-2` |
 | **Task 3** | CSS Pre-processors (SASS/SCSS) | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-3/)  | `task-3` |
 | **Task 4** | Version Control & Git          | [Log & Docs](https://blaqbeard.github.io/FlexiSaf-Internship/task-4/) | `task-4` |
-| **Task 5** | npm/yarn Package Management    | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-5/)                                     | `task-5` |
+| **Task 5** | npm/yarn Package Management    | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-5/)  | `task-5` |
 | **Task 6** | React Fundamentals             | Coming Soon                                                           | `task-6` |
 
 ## 📚 Curriculum Progress
 
 ### ✅ Completed Tasks
 
-#### Task 2: CSS Implementation & ES6 Features - Completed
+#### Task 2: CSS Implementation & ES6 Features
 
 - **Duration**: 1 week
 - **Focus**: Advanced CSS properties, selectors, typography, box model, layout systems, and ES6 JavaScript features
@@ -31,7 +31,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - Layout: CSS Grid and Flexbox
   - Responsive Design with media queries
 
-#### Task 3: CSS Pre-processors (SASS/SCSS) - Completed
+#### Task 3: CSS Pre-processors (SASS/SCSS)
 
 - **Duration**: 1 week
 - **Focus**: Understanding and implementing SCSS in a real project
@@ -43,7 +43,9 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - Single compiled stylesheet: `task-3/dist/style.css`
   - Real-time dashboard with Analytics and Reports pages
 
-#### Task 4: Version Control - Completed
+### 📋 Upcoming Tasks
+
+#### Task 4: Version Control
 
 - **Duration**: 1 week
 - **Focus**: Git and GitHub mastery
@@ -54,18 +56,15 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - Pull requests and code review
   - Upstream and downstream workflows
 
-#### Task 5: npm/yarn Package Management – Completed
+#### Task 5: npm/yarn Package Management
 
 - **Duration**: 1 week
-- **Deliverable**: Currency Converter (Vite + axios + dayjs)
-- **Highlights**:
-  - Initialized project with npm and Vite
-  - Installed and imported packages: `axios`, `dayjs`
-  - npm scripts: `dev`, `build`, `preview`
-  - Browser app with vibrant UI, animations, and on-page “Packages Used” section
-  - API fallback strategy to avoid CORS issues
- 
-  ### 📋 Upcoming Tasks
+- **Focus**: Node.js and package management
+- **Learning Outcomes**:
+  - Understanding Node.js basics
+  - Package management with npm/yarn
+  - Dependency management
+  - Scripts and automation
 
 #### Task 6: React Fundamentals
 
@@ -127,12 +126,8 @@ flexi/
 │       └── style.css        # Compiled single CSS
 ├── task-4/                  # Version Control & Git
 │   └── (coming soon)
-├── task-5/                  # npm/yarn Package Management (Currency Converter)
-│   ├── index.html
-│   ├── src/
-│   │   ├── main.js          # UI + conversion logic with axios/dayjs
-│   │   └── style.css        # Vibrant styles & animations
-│   └── README.md            # Task-specific notes
+├── task-5/                  # npm/yarn Package Management
+│   └── (coming soon)
 └── task-6/                  # React Fundamentals
     └── (coming soon)
 ```
@@ -250,6 +245,6 @@ This project is part of the FlexiSaf Internship Program. All rights reserved.
 
 _Built with dedication and attention to detail for the FlexiSaf Internship Program_
 
-**Last Updated**: October 2025  
-**Version**: 1.1.0  
-**Status**: In Progress (Task 5 completed) 🚀
+**Last Updated**: September 2025  
+**Version**: 1.0.0  
+**Status**: In Progress 🚀
