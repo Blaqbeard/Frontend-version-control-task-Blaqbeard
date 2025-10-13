@@ -25,8 +25,8 @@ app.innerHTML = `
         <div class="select">
           <label for="to">To</label>
           <select id="to"></select>
-        </div>
-      </div>
+    </div>
+  </div>
       <button class="cta" type="submit">Convert</button>
       <p id="result" class="result" aria-live="polite"></p>
       <p id="updated" class="updated"></p>
