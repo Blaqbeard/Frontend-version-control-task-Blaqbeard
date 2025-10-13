@@ -11,7 +11,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 | **Task 2** | CSS Implementation             | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-2/)  | `task-2` |
 | **Task 3** | CSS Pre-processors (SASS/SCSS) | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-3/)  | `task-3` |
 | **Task 4** | Version Control & Git          | [Log & Docs](https://blaqbeard.github.io/FlexiSaf-Internship/task-4/) | `task-4` |
-| **Task 5** | npm/yarn Package Management    | Coming Soon                                                           | `task-5` |
+| **Task 5** | npm/yarn Package Management    | [View App (run locally)](task-5/)                                     | `task-5` |
 | **Task 6** | React Fundamentals             | Coming Soon                                                           | `task-6` |
 
 ## 📚 Curriculum Progress
@@ -56,15 +56,16 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - Pull requests and code review
   - Upstream and downstream workflows
 
-#### Task 5: npm/yarn Package Management
+#### Task 5: npm/yarn Package Management – Completed
 
 - **Duration**: 1 week
-- **Focus**: Node.js and package management
-- **Learning Outcomes**:
-  - Understanding Node.js basics
-  - Package management with npm/yarn
-  - Dependency management
-  - Scripts and automation
+- **Deliverable**: Currency Converter (Vite + axios + dayjs)
+- **Highlights**:
+  - Initialized project with npm and Vite
+  - Installed and imported packages: `axios`, `dayjs`
+  - npm scripts: `dev`, `build`, `preview`
+  - Browser app with vibrant UI, animations, and on-page “Packages Used” section
+  - API fallback strategy to avoid CORS issues
 
 #### Task 6: React Fundamentals
 
@@ -126,8 +127,12 @@ flexi/
 │       └── style.css        # Compiled single CSS
 ├── task-4/                  # Version Control & Git
 │   └── (coming soon)
-├── task-5/                  # npm/yarn Package Management
-│   └── (coming soon)
+├── task-5/                  # npm/yarn Package Management (Currency Converter)
+│   ├── index.html
+│   ├── src/
+│   │   ├── main.js          # UI + conversion logic with axios/dayjs
+│   │   └── style.css        # Vibrant styles & animations
+│   └── README.md            # Task-specific notes
 └── task-6/                  # React Fundamentals
     └── (coming soon)
 ```
@@ -245,6 +250,6 @@ This project is part of the FlexiSaf Internship Program. All rights reserved.
 
 _Built with dedication and attention to detail for the FlexiSaf Internship Program_
 
-**Last Updated**: September 2025  
-**Version**: 1.0.0  
-**Status**: In Progress 🚀
+**Last Updated**: October 2025  
+**Version**: 1.1.0  
+**Status**: In Progress (Task 5 completed) 🚀
