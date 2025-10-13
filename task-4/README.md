@@ -13,6 +13,12 @@ This task demonstrates practical Git/GitHub workflows using the minimal CLI app 
 - Squash workflow via interactive rebase before merge
 - Tagging releases and generating activity logs
 
+## Image Reference
+
+![Repo overview](/images/repo-overview.png)
+![Git history](/images/git-history.png)
+[![Merged PR](/images/merged-pr.png)](https://github.com/Blaqbeard/story-print/pull/2)
+
 ## Evidence
 
 - Log: `story-print/TASK4_LOG.txt`
@@ -49,17 +55,20 @@ cd story-print
 - Ran on master: `git fetch --all --prune` and `git pull --rebase` (captured in `TASK4_LOG.txt`).
 
 ### Pull Requests
+
 - https://github.com/Blaqbeard/Frontend-version-control-task-Blaqbeard/pull/7
 - https://github.com/Blaqbeard/Frontend-version-control-task-Blaqbeard/pull/6
 - https://github.com/Blaqbeard/Frontend-version-control-task-Blaqbeard/pull/5
 
 ### Commands I used most
+
 - git branch / checkout / switch
 - git add / commit / push / pull --rebase / fetch --all --prune
 - git merge / rebase -i / cherry-pick / revert
 - gh pr create / comment / merge
 
 ### Lessons learned
+
 - Clear commit messages and small PRs simplify reviews.
 - Squash keeps history clean; rebase integrates linear history.
 - Revert is safer than reset on shared branches.
