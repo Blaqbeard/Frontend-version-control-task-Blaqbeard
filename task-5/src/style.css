@@ -1,0 +1,245 @@
+:root {
+  --bg: radial-gradient(1200px 600px at 20% -10%, #6a5af9 0%, transparent 45%),
+    radial-gradient(1200px 600px at 110% 10%, #00d4ff 0%, transparent 40%),
+    #0f1020;
+  --card: #151734;
+  --text: #e9e9ff;
+  --muted: #a3a6c2;
+  --accent: #00d4ff;
+  --accent-2: #6a5af9;
+  --danger: #ff5c7a;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.title {
+  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: 0.3px;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: float 8s ease-in-out infinite;
+}
+.subtitle {
+  margin-top: 0.25rem;
+  color: var(--muted);
+}
+
+.converter {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.25rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.glow {
+  position: relative;
+  overflow: hidden;
+}
+.glow::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--accent-2),
+    var(--accent),
+    transparent 40%
+  );
+  filter: blur(12px);
+  opacity: 0.5;
+  z-index: -1;
+  animation: spin 8s linear infinite;
+}
+
+.amount-row {
+  display: grid;
+  gap: 0.35rem;
+}
+.select-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.75rem;
+  align-items: end;
+}
+.select {
+  display: grid;
+  gap: 0.35rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+input,
+select {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #0e0f22;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.25s, transform 0.06s ease-out;
+}
+input:focus,
+select:focus {
+  border-color: var(--accent);
+}
+input:active {
+  transform: scale(0.997);
+}
+
+.swap {
+  margin: 0 0 0.3rem;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: radial-gradient(circle at 30% 30%, #1d1f3b, #0e0f22);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.swap:hover {
+  box-shadow: 0 0 0 6px rgba(0, 212, 255, 0.12);
+}
+.swap.spin {
+  animation: twist 0.4s linear;
+}
+
+.cta {
+  margin-top: 0.6rem;
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  color: #051018;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 212, 255, 0.25);
+  transition: transform 0.08s ease-out, filter 0.2s ease;
+}
+.cta:hover {
+  filter: brightness(1.05);
+}
+.cta:active {
+  transform: translateY(1px) scale(0.998);
+}
+
+.result {
+  margin: 0.8rem 0 0.25rem;
+  font-size: 1.05rem;
+}
+.result .amount {
+  font-weight: 700;
+}
+.result .highlight {
+  color: var(--accent);
+}
+.result .rate {
+  margin-left: 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.result.error {
+  color: var(--danger);
+  font-weight: 600;
+}
+.result.pop {
+  animation: pop 0.45s ease;
+}
+.updated {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.info h2 {
+  margin: 0 0 0.5rem;
+}
+.info ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+.info li {
+  margin: 0.25rem 0;
+}
+.code {
+  margin-top: 0.6rem;
+  background: #0e0f22;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0.8rem;
+  overflow-x: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes twist {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.97);
+  }
+  60% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
