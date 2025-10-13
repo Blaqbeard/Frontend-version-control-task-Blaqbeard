@@ -11,14 +11,14 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
 | **Task 2** | CSS Implementation             | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-2/)  | `task-2` |
 | **Task 3** | CSS Pre-processors (SASS/SCSS) | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-3/)  | `task-3` |
 | **Task 4** | Version Control & Git          | [Log & Docs](https://blaqbeard.github.io/FlexiSaf-Internship/task-4/) | `task-4` |
-| **Task 5** | npm/yarn Package Management    | [View App (run locally)](task-5/)                                     | `task-5` |
+| **Task 5** | npm/yarn Package Management    | [View Demo](https://blaqbeard.github.io/FlexiSaf-Internship/task-5/)                                     | `task-5` |
 | **Task 6** | React Fundamentals             | Coming Soon                                                           | `task-6` |
 
 ## 📚 Curriculum Progress
 
 ### ✅ Completed Tasks
 
-#### Task 2: CSS Implementation & ES6 Features
+#### Task 2: CSS Implementation & ES6 Features - Completed
 
 - **Duration**: 1 week
 - **Focus**: Advanced CSS properties, selectors, typography, box model, layout systems, and ES6 JavaScript features
@@ -31,7 +31,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - Layout: CSS Grid and Flexbox
   - Responsive Design with media queries
 
-#### Task 3: CSS Pre-processors (SASS/SCSS)
+#### Task 3: CSS Pre-processors (SASS/SCSS) - Completed
 
 - **Duration**: 1 week
 - **Focus**: Understanding and implementing SCSS in a real project
@@ -43,9 +43,7 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - Single compiled stylesheet: `task-3/dist/style.css`
   - Real-time dashboard with Analytics and Reports pages
 
-### 📋 Upcoming Tasks
-
-#### Task 4: Version Control
+#### Task 4: Version Control - Completed
 
 - **Duration**: 1 week
 - **Focus**: Git and GitHub mastery
@@ -66,6 +64,8 @@ This repository contains my complete portfolio of deliverables for the **FlexiSa
   - npm scripts: `dev`, `build`, `preview`
   - Browser app with vibrant UI, animations, and on-page “Packages Used” section
   - API fallback strategy to avoid CORS issues
+ 
+  ### 📋 Upcoming Tasks
 
 #### Task 6: React Fundamentals
 
